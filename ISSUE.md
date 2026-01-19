@@ -12,7 +12,7 @@ This makes it impossible to click through to linked documents when reviewing pre
 
 ## Link to the code
 
-https://github.com/jhb-software/payload-reproductions/tree/main/payload-lexical-internal-link-versions
+https://github.com/jhb-dev/payload-lexical-internal-link-versions
 
 ## Reproduction Steps
 

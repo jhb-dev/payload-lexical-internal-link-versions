@@ -20,5 +20,21 @@ export const Pages: CollectionConfig = {
       // Uses the default Lexical editor from payload.config.ts
       // which includes the link feature with internal link support
     },
+    {
+      name: 'updatedBy',
+      type: 'relationship',
+      relationTo: 'users',
+      maxDepth: 0,
+      admin: {
+        readOnly: true,
+      },
+      hooks: {
+        beforeChange: [
+          ({ req }) => {
+            return req.user?.id
+          },
+        ],
+      },
+    },
   ],
 }
